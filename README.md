@@ -4,7 +4,7 @@
   <img src="speedtest.png" alt="Speedtest Logo"/>
 </p>
 
-A self-contained Python 3 exporter that runs the \[Ookla® Speedtest CLI] on every Prometheus or Grafana Alloy scrape and exposes the results (`download`, `upload`, `ping`, `jitter`, …) in a **/metrics** endpoint that Grafana can visualise via the included dashboard.
+A self-contained Python 3 exporter that runs the [Ookla® Speedtest CLI](https://www.speedtest.net/apps/cli) on every Prometheus or Grafana Alloy scrape and exposes the results (`download`, `upload`, `ping`, `jitter`, …) in a **/metrics** endpoint that Grafana can visualise via the included dashboard.
 
 ---
 
@@ -138,4 +138,4 @@ If the script is already running for at least an hour, the dashboard shows trend
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for details.
+Distributed under the [MIT License](LICENSE).
