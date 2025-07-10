@@ -1,0 +1,17 @@
+[Unit]
+Description=Speedtest Daemon
+After=network.target
+
+[Service]
+User=speedtest
+Group=speedtest
+WorkingDirectory=/etc/speedtest/
+ExecStart=/etc/speedtest/venv/bin/python /etc/speedtest/speedtest_v2.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=speedtest
+
+[Install]
+WantedBy=multi-user.target
